@@ -6,7 +6,7 @@ import Label from "../Label";
 const Card = () => {
   return (
     <article className={styles.card}>
-      <Label children="Портфолио" />
+      <Label>Портфолио</Label>
       <a className={styles.card__picture} href="#" target="_blank">
         <Image
           className={styles.card__img}
