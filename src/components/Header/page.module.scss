@@ -1,0 +1,25 @@
+.header {
+  padding-top: rem(40);
+  margin-bottom: rem(42);
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__logo {
+    display: flex;
+    font-weight: 800;
+    text-decoration: none;
+    color: var(--black);
+    font-size: rem(28);
+  }
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: rem(16);
+  &__link {
+    display: flex;
+  }
+}

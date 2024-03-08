@@ -1,0 +1,1 @@
+self.__NEXT_FONT_MANIFEST="{\"pages\":{},\"app\":{\"/Users/anniehartmann97/Documents/Anna/Components/Programmer/Ana/src/app/layout\":[\"static/media/4211d34fd1c6f59f-s.p.woff2\"]},\"appUsingSizeAdjust\":true,\"pagesUsingSizeAdjust\":false}"

@@ -1,0 +1,5 @@
+.github {
+  --size: #{rem(32)};
+  width: var(--size);
+  height: var(--size);
+}

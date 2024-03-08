@@ -1,0 +1,9 @@
+.container {
+  --container-max-width: #{rem(1300)};
+  --container-padding: #{rem(70)};
+  width: min(var(--container-max-width), 100% - (var(--container-padding) * 2));
+  margin: 0 auto;
+  @media (max-width: $tablet) {
+    --container-padding: #{rem(16)};
+  }
+}

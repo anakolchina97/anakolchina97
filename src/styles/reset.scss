@@ -1,0 +1,35 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html {
+  font-size: 16px;
+  @media (max-width: $desktop) {
+    font-size: vw(16);
+  }
+  @media (max-width: $tablet) {
+    font-size: 16px;
+  }
+}
+
+body {
+  font-style: var(--default-font-style);
+  font-size: var(--default-font-size);
+  line-height: var(--default-line-height);
+  font-weight: var(--default-font-weight);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+picture {
+  display: block;
+}
