@@ -1,10 +1,12 @@
 import React from "react";
 import styles from "./page.module.scss";
 import Image from "next/image";
+import Label from "../Label";
 
 const Card = () => {
   return (
     <article className={styles.card}>
+      <Label children="Портфолио" />
       <a className={styles.card__picture} href="#" target="_blank">
         <Image
           className={styles.card__img}

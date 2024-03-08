@@ -1,0 +1,14 @@
+.label {
+  position: absolute;
+  z-index: 1;
+  top: rem(15);
+  left: rem(15);
+  background: var(--white);
+  border-radius: rem(50);
+  padding: rem(6) rem(14);
+  display: flex;
+  gap: rem(7);
+  font-size: rem(14);
+  line-height: normal;
+  height: rem(30);
+}

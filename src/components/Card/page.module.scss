@@ -1,5 +1,6 @@
 .card {
   $this: &;
+  position: relative;
   overflow: hidden;
   border-radius: rem(20);
   border: 1px solid var(--gray);
