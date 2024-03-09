@@ -3,26 +3,47 @@ import styles from "./page.module.scss";
 import Image from "next/image";
 import Label from "../Label";
 
-const Card = () => {
+interface LogoAttributes {
+  url: string;
+}
+interface ICard {
+  title: string;
+  description: string;
+  labels: string;
+  logo: {
+    data: {
+      id: number;
+      attributes: LogoAttributes;
+    };
+  };
+  background: {
+    data: {
+      id: number;
+      attributes: LogoAttributes;
+    };
+  };
+}
+
+const Card = ({ title, description, labels, logo, background }: ICard) => {
+  const logoUrl = logo?.data?.attributes?.url;
+  const bgUrl = background?.data?.attributes?.url;
+
   return (
     <article className={styles.card}>
-      <Label>Портфолио</Label>
+      <Label iconName={labels}>{labels}</Label>
       <a className={styles.card__picture} href="#" target="_blank">
         <Image
           className={styles.card__img}
-          src="/images/healthy.jpg"
+          src={bgUrl}
           fill={true}
           alt="healthy"
           style={{ objectFit: "cover" }}
         />
-        <img className={styles.card__logo} src="/images/healthy-logo.svg" />
+        <img className={styles.card__logo} src={logoUrl} />
       </a>
       <div className={styles.card__content}>
-        <p className={styles.card__title}>Healthy</p>
-        <p className={styles.card__description}>
-          Разработка лендинга на&nbsp;VueJS. Это мой первый опыт самостоятельной
-          разработки проекта с&nbsp;использованием технологии VueJS.
-        </p>
+        <p className={styles.card__title}>{title}</p>
+        <p className={styles.card__description}>{description}</p>
       </div>
     </article>
   );

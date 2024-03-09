@@ -3,13 +3,14 @@ import styles from "./page.module.scss";
 import LabelIcon from "../LabelIcon/LabelIcon";
 
 interface ILabel {
+  iconName: string;
   children: React.ReactNode;
 }
 
-const Label = ({ children }: ILabel) => {
+const Label = ({ iconName, children }: ILabel) => {
   return (
     <div className={styles.label}>
-      <LabelIcon />
+      <LabelIcon iconName={iconName} />
       {children}
     </div>
   );

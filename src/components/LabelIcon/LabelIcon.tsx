@@ -10,8 +10,11 @@ const LabelIcon = ({ iconName }: ILabelIcon) => {
   let iconComponent;
 
   switch (iconName) {
-    case "portfolio":
+    case "Портфолио":
       iconComponent = "/images/label-icons/portfolio.png";
+      break;
+    case "Обучение":
+      iconComponent = "/images/label-icons/education.png";
       break;
     default:
       iconComponent = "/images/label-icons/portfolio.png";
