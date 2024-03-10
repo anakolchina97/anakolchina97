@@ -13,7 +13,7 @@ const Cards = () => {
     const fetchData = async () => {
       try {
         const { data: data } = await axios.get(
-          "http://80.78.243.66:1337/api/cards?populate=*"
+          "https://80.78.243.66:1337/api/cards?populate=*"
         );
         setCards(data.data);
       } catch (e) {}
