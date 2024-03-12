@@ -42,7 +42,13 @@ const Card = ({ title, description, labels, logo, background }: ICard) => {
           alt="healthy"
           style={{ objectFit: "cover" }}
         />
-        <img className={styles.card__logo} src={logoImage} />
+        <Image
+          className={styles.card__logo}
+          src={logoImage}
+          width={373}
+          height={150}
+          alt=""
+        />
       </a>
       <div className={styles.card__content}>
         <p className={styles.card__title}>{title}</p>
